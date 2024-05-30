@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("pics/binarywallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#game-board {
+    border-radius: 70px;
+    display: grid;
+    grid-template-columns: repeat(20,20px);
+    grid-template-rows: repeat(20,20px);
+    margin: 5px;
+}
+
+.game-border-1 {
+    border: black solid 10px;
+    background-color: skyblue;
+    box-shadow: inset 0 0 0 10px black;
+}
+
+.game-border-2 {
+    border: darkgray solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px black;
+}
+
+.game-border-3 {
+    border: gray solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px black;
+}
+
+#instruction-text {
+    position: absolute;
+    top: 62%;
+    left: 42%;
+    color: #333;
+    width: 300px;
+    text-transform: capitalize;
+    padding: 30px;
+    margin: 0;
+}
+
+.scores {
+ display: flex;
+ justify-content: space-between;
+}
+
+#score{
+    color: yellow;
+    background-color: black;
+    padding: 10px;
+}
+
+#score, #highscore {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+#highscore {
+    color: black;
+    display: none;
+}
+
+.snake {
+    border: black solid 5px;
+    background-color: black;
+}
+
+.food {
+    background-color: darkblue;
+    border: blue 3px solid;
+    border-radius: 50px;
+}
+
+#logo{
+    position: absolute;
+    border-radius: 50px;
+}
+
